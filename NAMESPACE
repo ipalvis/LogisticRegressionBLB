@@ -3,3 +3,5 @@
 export(average_CI)
 export(buildmodel)
 export(pred_CI)
+importFrom("stats", "binomial", "glm", "predict", "qt")
+  importFrom("utils", "read.csv")
