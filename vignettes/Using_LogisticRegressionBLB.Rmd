@@ -1,0 +1,19 @@
+---
+title: "Using_LogisticRegressionBLB"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using LogisticRegressionBLB}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+Example vignette when using Logistic Regression BLB
+```{r setup}
+library(LogisticRegressionBLB)
+```
