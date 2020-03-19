@@ -2,12 +2,12 @@ Package: LogisticRegressionBLB
 Title: Bag of Little Bootstrap for Logistic Regression Model
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Alvis",
+           family = "Ip",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "aip@ucdavis.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: LogisticRegressionBLB uses bag of little boostraps to estimate regression coefficients, standard error, and prediction interviews on a binary logit model.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
@@ -17,6 +17,9 @@ Imports:
      scales
 RoxygenNote: 7.0.2
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
 URL: https://github.com/ipalvis/LogisticRegressionBLB
 BugReports: https://github.com/ipalvis/LogisticRegressionBLB/issues
+VignetteBuilder: knitr
