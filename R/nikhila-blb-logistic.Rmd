@@ -43,13 +43,13 @@ split_data <- function(data, m) {
 glm_each_subsample <- function(formula, data, n, B) {
   each_sub <- replicate(B, glm_each_boot(formula, data, n), simplify = FALSE)
   #print(each_sub)
-  #sum_coef <- each_sub %>% reduce(`+`, .$coef)
+  sum_coef <- each_sub %>% reduce(`+`, .$coef)
   as.data.frame(each_sub)
   sub_sum_coef <- each_sub[[1]]$coef + each_sub[[2]]$coef
   sub_sum_coef <- sum(each_sub)
-  print(sub_sum_coef)
+  #print(sub_sum_coef)
   sub_mean_coef <- sub_sum_coef/B
-  #sub_mean_se <- sum_sub$se/B
+  sub_mean_se <- sum_sub$se/B
   list(coef = sub_mean_coef)
 }
 
